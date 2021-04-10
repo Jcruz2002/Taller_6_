@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Emplead">
+  <ClassDiagramComponents>
+    <Class name="EmpleadoAsalariado" package="" visibility="public" xPosition="277.0" yPosition="322.0">
+      <Fields>
+        <Field name="Salario" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularSalario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoHora" package="" visibility="public" xPosition="472.0" yPosition="382.0">
+      <Fields>
+        <Field name="PagoExtra" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularSalario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoAsalariadoComision" package="" visibility="public" xPosition="919.0" yPosition="303.0">
+      <Fields>
+        <Field name="Salario" type="int" visibility="private"/>
+        <Field name="Comision" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularSalario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoComision" package="" visibility="public" xPosition="715.0" yPosition="382.0">
+      <Fields>
+        <Field name="Comision" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularSalario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Empleado" package="" visibility="public" xPosition="586.0" yPosition="113.0">
+      <Fields>
+        <Field name="Horas" type="int" visibility="private"/>
+        <Field name="pagoHoras" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="EmpleadoComision" target="Empleado"/>
+    <IsRelation name="is" source="EmpleadoAsalariadoComision" target="Empleado"/>
+    <IsRelation name="is" source="EmpleadoHora" target="Empleado"/>
+    <IsRelation name="is" source="EmpleadoAsalariado" target="Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
